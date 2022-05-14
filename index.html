@@ -1,31 +1,72 @@
-<CTYPE html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>CopyC</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-			<home>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hello World</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="imil0ml8@gmail.com	">email</a></li>
-        		<li><a href="https://github.com/imilml">github.com/imilml</a></li>
-			</ul>
-		</footer>
-	</body>
-</html>
+    <head>
+        <title > Chakan Gallery</title>
+        <link type="text/css" rel="stylesheet" href="style.css">
 
+    </head>
+
+
+    <body>
+        <section id="banner">
+           <!img class="logo" src="photo/logo.png">
+           <div class="banner-text">
+                <h1>Chakan Studio</h1>
+                <p>Style your dress style  your life</p>
+                 <div class="banner-btn">
+                    <a href="#"> <span></span> Costom Order </a>
+                    <a href="#"> <span></span> Find More </a>
+                </div>
+            </div>
+                
+        <section>
+
+
+        <div id="sidenav">
+            <nav>
+                <ul>
+                    <li> <a href="#"> HOME </a></li>
+                    <li> <a href="#"> FEATURES </a></li>
+                    <li> <a href="#"> SERVICES </a></li>
+                    <li> <a href="#"> TESTIMONIALS </a></li>
+                    <li> <a href="#"> MEET US </a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="menubtn">
+            <img src="photo/menu.jpg" id="menu">
+        </div>
+         
+            <!---features-->
+            <section id="feature">
+                <div class="title-text">
+                    <p>FEATURES </p>
+                    <h1>Why Choose Us</h1>
+                </div>
+            </section>
+            
+            <script>
+            var menubtn = document.getElementById("menubtn")
+            var menu = document.getElementById("menu")
+            var sidenav = document.getElementById("sidenav")
+
+            sidenav.style.right = "-180px" 
+            menubtn.onclick = function(){
+                if(sidenav.style.right == "-180px"){
+                    sidenav.style.right = "0"
+                    menu.src = "photo/close.png";
+                }
+                else{
+                    sidenav.style.right = "-180px"
+                    menu.src = "photo/menu.jpg";
+                }
+            }
+            </script>
+
+    </body>
+
+</html>3
+
+
+ 
